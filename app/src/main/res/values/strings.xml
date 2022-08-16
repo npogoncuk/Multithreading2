@@ -2,4 +2,6 @@
     <string name="app_name">Multithreading</string>
     <string name="start">Start</string>
     <string name="stop">Stop</string>
+    <string name="notification_title">Multithreading homework</string>
+    <string name="notification_text">You will see me again after 1 minute</string>
 </resources>
