@@ -15,7 +15,6 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import java.util.concurrent.TimeUnit
 
-
 private const val NOTIFICATION_ID = 0
 
 class ShowNotificationWorker(private val context: Context, params: WorkerParameters) :
@@ -55,7 +54,7 @@ class OneNotificationWorker(private val context: Context, params: WorkerParamete
                 notify(NOTIFICATION_ID, notificationBuilder.build())
             }
         }
-        Log.d("Worker", "doWork: After Toast")
+        Log.d("Worker", "doWork: Showed Notification")
         return Result.success()
     }
 }
