@@ -69,7 +69,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        if (broadcastReceiver == null) broadcastReceiver = BootCompletedReceiver(binding)
+        if (broadcastReceiver == null) broadcastReceiver = BootCompletedReceiver { binding.startButton.performClick() }
         registerReceiver(broadcastReceiver, IntentFilter(Intent.ACTION_BOOT_COMPLETED))
     }
 
